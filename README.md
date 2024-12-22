@@ -24,10 +24,18 @@ This document provides details about the E-Commerce Application, including setup
 2. **Configure Database:**
    - Update `application.properties` or `application.yml` file in the `src/main/resources` directory with your database credentials:
      ```properties
-     spring.datasource.url=jdbc:postgresql://localhost:5432/ecommerce
-     spring.datasource.username=<username>
-     spring.datasource.password=<password>
-     spring.jpa.hibernate.ddl-auto=update
+    spring:
+  datasource:
+    url: jdbc:h2:mem:ecommerce
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: password
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
      ```
 
 3. **Install Dependencies:**

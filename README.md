@@ -17,7 +17,7 @@ This document provides details about the E-Commerce Application, including setup
 
 1. **Clone the Repository:**
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/SaumyaEng/ecommerceApp.git
    cd <repository-folder>
    ```
 
